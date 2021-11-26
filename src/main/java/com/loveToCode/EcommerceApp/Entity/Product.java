@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
-@Table(name = "Product")
+@Table(name = "product")
 @Data // this is from Lombok it generates getter and setters behind the scene
 public class Product {
     @Id
@@ -18,7 +18,7 @@ public class Product {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "skue")
+    @Column(name = "sku")
     private String sku;
 
     @Column(name = "name")
@@ -36,7 +36,7 @@ public class Product {
     @Column(name = "active")
     private Boolean active;
 
-    @Column(name = "in_stock")
+    @Column(name = "units_in_stock")
     private int unitInStock;
 
     @CreationTimestamp
